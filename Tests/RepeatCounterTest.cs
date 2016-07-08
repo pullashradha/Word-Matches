@@ -9,8 +9,8 @@ namespace WordMatches.Objects
     public void CountRepeats_DisplaySentenceArray_true()
     {
       RepeatCounter newRepeatCounter = new RepeatCounter ();
-      newRepeatCounter.SetSentence("I love dogs");
-      Assert.Equal("I love dogs", newRepeatCounter.CountRepeats());
+      newRepeatCounter.SetSentence("We love dogs");
+      Assert.Equal(3, newRepeatCounter.CountRepeats());
     }
   }
 }

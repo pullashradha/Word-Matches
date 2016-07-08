@@ -9,7 +9,7 @@ namespace WordMatches.Objects
   {
     // private string _wordInput;
     private string _sentenceInput;
-
+    private int arrayElementNumbers;
     // public string GetWord()
     // {
     //   return _wordInput;
@@ -27,10 +27,14 @@ namespace WordMatches.Objects
       _sentenceInput = newSentence;
     }
 
-    public string CountRepeats()
+    public int CountRepeats()
     {
-      // string[] sentenceArray = _sentenceInput.Split(" ");
-      return _sentenceInput;
+      string[] sentenceArray = _sentenceInput.Split();
+      foreach (string word in sentenceArray)
+      {
+        arrayElementNumbers += 1;
+      }
+      return arrayElementNumbers;
     }
   }
 }
