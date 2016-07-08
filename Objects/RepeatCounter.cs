@@ -25,24 +25,16 @@ namespace WordMatches.Objects
     {
       _sentenceInput = newSentence;
     }
-    public bool IsWordInArray()
-    {
-      foreach (string word in _sentenceArray)
-      {
-        if (_wordInput == word)
-        {
-          return true;
-        }
-      }
-      return false;
-    }
     public int CountRepeats()
     {
       string[] _sentenceArray = _sentenceInput.Split();
       int numberArrayElements = 0;
       foreach (string word in _sentenceArray)
       {
-        numberArrayElements += 1;
+        if (word == _wordInput)
+        {
+          numberArrayElements += 1;
+        }
       }
       return numberArrayElements;
     }

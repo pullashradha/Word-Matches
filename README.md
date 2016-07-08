@@ -28,10 +28,9 @@ The program should ... | Example Input | Example Output | Ex Input Reasoning
 Input the word and sentence/phrase as separate strings | Word: dog, Sentence: We love dogs | string wordInput = "dog", string sentenceInput = "We love dogs" | Simple input values that only show one instance of repetition for the inputted word
 Split sentence string into elements for words in between spaces | String Input: "We love dogs" | String Array: "We", "love", "dogs" | Simple three word sentence that doesn't have any punctuation or chars
 Loop through each element in the sentenceArray to count the number of elements it has | String: "We love dogs" | arrayElementNumbers = 3 | Reasoning 3
-Loop through sentenceArray and find if wordInput is inside | Sentence: "We love dogs", Word: "dogs" | True | Reasoning 4
-Loop through sentenceArray and count the number of times the wordInput appears | String: "We", "love", "dogs" and search for "dogs" | wordRepeatedNumber = 1 | Reasoning 5
+Loop through sentenceArray and count the number of times the wordInput appears | String: "We", "love", "dogs" and search for "dogs" | wordRepeatedNumber = 1 | Reasoning 4
 Display number of times word is repeated in phrase on the result page | Index Page: We love dogs search for dogs | Result Page: 1 | Shows what exactly what will display on the index page so easy to see how the result page is related
-Input and display word and sentence/phrase from index page on to result page along with number of repeats | Index Page: We love dogs search for dogs | Result Page: dogs is repeated 1 time in the phrase- We love dogs | Reasoning 7
+Input and display word and sentence/phrase from index page on to result page along with number of repeats | Index Page: We love dogs search for dogs | Result Page: dogs is repeated 1 time in the phrase- We love dogs | Reasoning 6
 
 ## Future Features
 
