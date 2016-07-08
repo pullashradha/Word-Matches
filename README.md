@@ -49,7 +49,7 @@ Contact Epicodus for support in running this program.
 
 ## Links
 
-Git Hub Repository: https://github.com/pullashradha/Word-Matches
+Git Hub Repository: https://github.com/pullashradha/WordMatches
 
 ## License
 
