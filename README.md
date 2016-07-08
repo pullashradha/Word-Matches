@@ -19,7 +19,7 @@ This program can only be accessed on a PC with Windows 10, and with git and atom
 
 ## Known Bugs
 
-No known bugs.
+The sentenceArray does not split words attached to characters if there is no space between them. Code cannot count instances of a word in the sentence if there is a character directly before the word.
 
 ## Specifications
 
