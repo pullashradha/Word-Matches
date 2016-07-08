@@ -1,0 +1,53 @@
+body {
+  font-family: serif;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/*--------------Index.cshtml Styling--------------*/
+
+h1 {
+  font-size: 50pt;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+form {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+h4 {
+  font-size: 20pt;
+}
+
+.word-input {
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  font-size: 20pt;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/*--------------Result.cshtml Styling--------------*/
+
+h2, h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
