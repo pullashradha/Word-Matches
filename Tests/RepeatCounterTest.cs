@@ -24,7 +24,7 @@ namespace WordMatches.Objects
     {
       RepeatCounter newRepeatCounter = new RepeatCounter ();
       newRepeatCounter.SetWord("dogs");
-      newRepeatCounter.SetSentence("We love dogs and dogs love us because dogs are cool");
+      newRepeatCounter.SetSentence("We love dogs, and dogs love us, because dogs are cool!");
       Assert.Equal(3, newRepeatCounter.CountRepeats());
     }
   }
