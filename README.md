@@ -26,9 +26,9 @@ No known bugs.
 The program should ... | Example Input | Example Output | Ex Input Reasoning
 ----- | ----- | ----- | -----
 Input the word and sentence/phrase as separate strings | Word: dog, Sentence: We love dogs | string wordInput = "dog", string sentenceInput = "We love dogs" | Simple input values that only show one instance of repetition for the inputted word
-Split sentence string into elements for words in between spaces | String Input: "We love dogs" | String Array: "We", "love", "dogs" | Simple three word sentence that doesn't have any punctuation or chars
-Loop through each element in the sentenceArray to count the number of elements it has | String: "We love dogs" | arrayElementNumbers = 3 | Reasoning 3
-Loop through sentenceArray and count the number of times the wordInput appears | String: "We", "love", "dogs" and search for "dogs" | wordRepeatedNumber = 1 | Reasoning 4
+Split sentence string into elements for words in between spaces | Sentence Input: "We love dogs" | Sentence Array: "We", "love", "dogs" | Simple three word sentence that doesn't have any punctuation or chars
+Loop through each element in the sentenceArray to count the number of elements it has | Sentence: "We love dogs" | arrayElementNumbers = 3 | Word only appears once in the sentence, very short sentence
+Loop through sentenceArray and count the number of times the wordInput appears | Sentence: "We love dogs, and dogs love us, because dogs are cool!", Word: "dogs" | wordRepeatedNumber = 3 | Longer full sentence (with punctuation) with more instances of word, ensures that the method is counting the actual words and instances of the word, and not irrelevant characters
 
 ## Future Features
 

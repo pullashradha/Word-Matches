@@ -28,15 +28,15 @@ namespace WordMatches.Objects
     public int CountRepeats()
     {
       string[] _sentenceArray = _sentenceInput.Split();
-      int numberArrayElements = 0;
+      int wordRepeatedNumber = 0;
       foreach (string word in _sentenceArray)
       {
         if (word == _wordInput)
         {
-          numberArrayElements += 1;
+          wordRepeatedNumber += 1;
         }
       }
-      return numberArrayElements;
+      return wordRepeatedNumber;
     }
   }
 }
