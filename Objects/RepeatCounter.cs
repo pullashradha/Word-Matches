@@ -9,7 +9,6 @@ namespace WordMatches.Objects
   {
     // private string _wordInput;
     private string _sentenceInput;
-    private int numberArrayElements;
     // public string GetWord()
     // {
     //   return _wordInput;
@@ -29,6 +28,7 @@ namespace WordMatches.Objects
     public int CountRepeats()
     {
       string[] sentenceArray = _sentenceInput.Split();
+      int numberArrayElements = 0;
       foreach (string word in sentenceArray)
       {
         numberArrayElements += 1;
