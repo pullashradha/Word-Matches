@@ -25,24 +25,18 @@ namespace WordMatches.Objects
     {
       _sentenceInput = newSentence;
     }
-    public string CountRepeats()
+    public int CountRepeats()
     {
       string[] _sentenceArray = _sentenceInput.Split();
       int numberArrayElements = 0;
-      string resultMessage= "";
       foreach (string word in _sentenceArray)
       {
         if (word == _wordInput)
         {
           numberArrayElements += 1;
-          resultMessage = ("Your word appears " + numberArrayElements + " time(s) in the given sentence/phrase!");
-        }
-        else
-        {
-          resultMessage = "Your word does not appear in the given sentence/phrase! Enter in another sentence.";
         }
       }
-      return resultMessage;
+      return numberArrayElements;
     }
   }
 }
