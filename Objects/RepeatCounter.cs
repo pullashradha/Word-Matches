@@ -7,17 +7,17 @@ namespace WordMatches.Objects
 {
   public class RepeatCounter
   {
-    private string _wordInput;
+    // private string _wordInput;
     private string _sentenceInput;
 
-    public string GetWord()
-    {
-      return _wordInput;
-    }
-    public void SetWord(string newWord)
-    {
-      _wordInput = newWord;
-    }
+    // public string GetWord()
+    // {
+    //   return _wordInput;
+    // }
+    // public void SetWord(string newWord)
+    // {
+    //   _wordInput = newWord;
+    // }
     public string GetSentence()
     {
       return _sentenceInput;
@@ -25,6 +25,12 @@ namespace WordMatches.Objects
     public void SetSentence(string newSentence)
     {
       _sentenceInput = newSentence;
+    }
+
+    public string CountRepeats()
+    {
+      // string[] sentenceArray = _sentenceInput.Split(" ");
+      return _sentenceInput;
     }
   }
 }
