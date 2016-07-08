@@ -6,6 +6,6 @@ namespace WordMatches.Objects
   public class RepeatCounterTest
   {
     [Fact]
-    
+
   }
 }
