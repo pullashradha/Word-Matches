@@ -25,11 +25,11 @@ No known bugs.
 
 The program should ... | Example Input | Example Output | Ex Input Reasoning
 ----- | ----- | ----- | -----
-Input the word and sentence/phrase as separate strings | Word: dog, Sentence: I love dogs | string wordInput = "dog", string phraseInput = "I love dogs" | Reasoning 1
-Split phrase string into elements for words in between spaces | String Input: "I love dogs" | String Array: "I", "love", "dogs" | Reasoning 2
-Loop through each element in the string array to search for elements that exactly match the word input, and add the number into an int variable | String: "I", "love", "dogs" and search for "dogs" | wordRepeatedNumber = 1 | Reasoning 3
-Display number of times word is repeated in phrase on the result page | Index Page: I love dogs search for dogs | Result Page: 1 | Reasoning 4
-Input and display word and sentence/phrase from index page on to result page along with number of repeats | Index Page: I love dogs search for dogs | Result Page: dogs is repeated 1 time in the phrase- I love dogs | Reasoning 5
+Input the word and sentence/phrase as separate strings | Word: dog, Sentence: We love dogs | string wordInput = "dog", string phraseInput = "We love dogs" | Simple input values that only show one instance of repetition for the inputted word
+Split phrase string into elements for words in between spaces | String Input: "We love dogs" | String Array: "We", "love", "dogs" | Simple three word sentence that doesn't have any punctuation or chars
+Loop through each element in the string array to search for elements that exactly match the word input, and add the number into an int variable | String: "We", "love", "dogs" and search for "dogs" | wordRepeatedNumber = 1 | Reasoning 3
+Display number of times word is repeated in phrase on the result page | Index Page: We love dogs search for dogs | Result Page: 1 | Shows what exactly what will display on the index page so easy to see how the result page is related
+Input and display word and sentence/phrase from index page on to result page along with number of repeats | Index Page: We love dogs search for dogs | Result Page: dogs is repeated 1 time in the phrase- We love dogs | Reasoning 5
 
 ## Future Features
 
