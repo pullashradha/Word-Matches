@@ -3,7 +3,17 @@
   <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
 </head>
 <body>
-  <h2>Your word appears @Model time(s) in your sentence!</h2>
-  <h3></h3>
+  @if (@Model == 0)
+  {
+    <h2>Your word does not appear in your sentence. Try again!</h2>
+  }
+  else if (@Model == 1)
+  {
+    <h2>Your word appears @Model time in your sentence!</h2>
+  }
+  else
+  {
+    <h2>Your word appears @Model times in your sentence!</h2>
+  }
   <h3><a href="/">Back Home</a></h3>
 </body>
