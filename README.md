@@ -19,16 +19,17 @@ This program can only be accessed on a PC with Windows 10, and with git and atom
 
 ## Known Bugs
 
-The sentenceArray does not split words attached to characters if there is no space between them. Code cannot count instances of a word in the sentence if there is a character directly before the word.
+* The sentenceArray does not split words attached to characters if there is no space between them. Code cannot count instances of a word in the sentence if there is a character directly before and after the word.
 
 ## Specifications
 
-The program should ... | Example Input | Example Output | Ex Input Reasoning
+The program should ... | Example Input | Example Output
 ----- | ----- | ----- | -----
-Input the word and sentence/phrase as separate strings | Word: dog, Sentence: We love dogs | string wordInput = "dog", string sentenceInput = "We love dogs" | Simple input values that only show one instance of repetition for the inputted word
-Split sentence string into elements for words in between spaces | Sentence Input: "We love dogs" | Sentence Array: "We", "love", "dogs" | Simple three word sentence that doesn't have any punctuation or chars
-Loop through each element in the sentenceArray to count the number of elements it has | Sentence: "We love dogs" | arrayElementNumbers = 3 | Word only appears once in the sentence, very short sentence
-Loop through sentenceArray and count the number of times the wordInput appears | Sentence: "We love dogs, and dogs love us, because dogs are cool!", Word: "dogs" | wordRepeatedNumber = 3 | Longer full sentence (with punctuation) with more instances of word, ensures that the method is counting the actual words and instances of the word, and not irrelevant characters
+Return a value of 0 when the word is not in the sentence | Word: dog, Sentence: We love dogs | "Your word appears 0 time(s) in your sentence!"
+Return a value of 1 when the word appears in the sentence once | Word: "dogs", Sentence: "We love dogs" | "Your word appears 1 time(s) in your sentence!"
+Be letter sensitive and only count the exact instance of the word, not similar words too | Word: "dogs", Sentence: "My dog is scared of other dogs" | "Your word appears 1 time(s) in your sentence!"
+Disregard characters directly after the word in a sentence | Word: "dogs", Sentence: "Our dogs, Rusty and Willow, are dogs. We love dogs! Do you love dogs? We have two other dogs- Apple and Tango. Our dogs love to play with other dogs; the dogs: play fetch, and run around." | "Your word appears 8 time(s) in your sentence!"
+Disregard the "-" character directly before the word in a sentence | Word: "dog", Sentence: "We love dogs -dog" | "Your word appears 8 time(s) in your sentence!"
 
 ## Future Features
 
