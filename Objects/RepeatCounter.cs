@@ -2,7 +2,7 @@ using System;
 using Nancy;
 using System.Collections.Generic;
 
-namespace WordMatches.Objects
+namespace WordMatches
 {
   public class RepeatCounter
   {

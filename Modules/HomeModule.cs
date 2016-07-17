@@ -1,6 +1,6 @@
 using System;
 using Nancy;
-using WordMatches.Objects;
+using WordMatches;
 using System.Collections.Generic;
 
 namespace WordMatches

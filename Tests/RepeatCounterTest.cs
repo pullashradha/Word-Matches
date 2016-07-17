@@ -1,7 +1,7 @@
 using Xunit;
 using System;
 
-namespace WordMatches.Objects
+namespace WordMatches
 {
   public class RepeatCounterTest
   {
