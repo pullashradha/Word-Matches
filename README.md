@@ -19,7 +19,7 @@ This program can only be accessed on a PC with Windows 10, and with git and atom
 
 ## Known Bugs
 
-* The sentenceArray does not split words attached to characters if there is no space between them. Code cannot count instances of a word in the sentence if there is a character directly before and after the word.
+* The sentence does not split words attached to characters if there is no space between them. Code cannot count instances of a word in the sentence if there is a character directly before and after the word.
 
 ## Specifications
 
@@ -35,7 +35,7 @@ Disregard the "-" character directly before the word in a sentence | Word: "dog"
 
 HTML | CSS | C#
 ----- | ----- | -----
------ | ----- | Underline all instances of the word repeated in the sentence on the Results page for easy viewing
+Show word and sentence on result.cshtml | Underline/highlight all instances of word in sentence on result.cshtml | Convert conditional parameters in CountRepeats method to regular expressions
 
 ## Support and Contact Details
 
