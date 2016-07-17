@@ -30,7 +30,7 @@ namespace WordMatches.Objects
       int wordRepeatedNumber = 0;
       foreach (string word in _sentenceArray)
       {
-        if (word == _wordInput || word == (_wordInput + ",") || word == (_wordInput + ".") || word == (_wordInput + "!") || word == (_wordInput + "?") || word == (_wordInput + "-") || word == (_wordInput + ":") || word == (_wordInput + ";") || word == ("," + _wordInput) || word == ("-" + _wordInput) || word == (":" + _wordInput) || word == (";" + _wordInput))
+        if (word == _wordInput)
         {
           wordRepeatedNumber += 1;
         }
