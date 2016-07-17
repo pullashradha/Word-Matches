@@ -6,6 +6,14 @@ namespace WordMatches.Objects
   public class RepeatCounterTest
   {
     [Fact]
+    public void Test_WordNotInSentence_0()
+    {
+      RepeatCounter newRepeatCounter = new RepeatCounter();
+      newRepeatCounter.SetWord("dog");
+      newRepeatCounter.SetSentence("We love dogs");
+      Assert.Equal(0, newRepeatCounter.CountRepeats());
+    }
+    [Fact]
     public void Test_CountsTimesWordRepeatedInSentence_1()
     {
       RepeatCounter newRepeatCounter = new RepeatCounter();
