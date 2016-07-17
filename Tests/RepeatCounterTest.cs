@@ -26,15 +26,15 @@ namespace WordMatches.Objects
     {
       RepeatCounter newRepeatCounter = new RepeatCounter();
       newRepeatCounter.SetWord("dogs");
-      newRepeatCounter.SetSentence("We love dogs! Do you love dogs?");
-      Assert.Equal(2, newRepeatCounter.CountRepeats());
+      newRepeatCounter.SetSentence("Our dogs, Rusty and Willow, are dogs. We love dogs! Do you love dogs? We have two other dogs- Apple and Tango. Our dogs love to play with other dogs; the dogs: play fetch, and run around.");
+      Assert.Equal(8, newRepeatCounter.CountRepeats());
     }
     [Fact]
     public void Test_CountsWordWithCharPreceding_true()
     {
       RepeatCounter newRepeatCounter = new RepeatCounter();
-      newRepeatCounter.SetWord("dogs");
-      newRepeatCounter.SetSentence("What did they name their pet -dogs");
+      newRepeatCounter.SetWord("dog");
+      newRepeatCounter.SetSentence("We love dogs -dog");
       Assert.Equal(1, newRepeatCounter.CountRepeats());
     }
   }
