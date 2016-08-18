@@ -23,7 +23,7 @@ This program can only be accessed on a PC with Windows 10, and with git and atom
 
 ## Specifications
 
-The program should ... | Example Input | Example Output
+The program should... | Example Input | Example Output
 ----- | ----- | ----- | -----
 Return a value of 0 when the word is not in the sentence | Word: dog, Sentence: We love dogs | "Your word appears 0 time(s) in your sentence!"
 Return a value of 1 when the word appears in the sentence once | Word: "dogs", Sentence: "We love dogs" | "Your word appears 1 time(s) in your sentence!"
